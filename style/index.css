@@ -1,0 +1,254 @@
+#video{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#presentation-salon h1{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 3%;
+}
+
+#presentation-salon{
+    background-color: #B5A8A8;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3%;
+}
+
+#potiere-stand{
+    height: 50%;
+    width: 50%;
+    margin-top: 3%;
+}
+
+#image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#video-presentation{
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* Section cartes */
+
+#metiers{
+    background-color: #4B4444;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.carte{
+    background-color: #756D6D;
+    color: white;
+    display: flex;
+    width: 60%;
+    height: 250px;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.texte-carte{
+    padding : 3% 3% 1% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.texte-carte h3{
+    margin: 0;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.texte-carte a{
+    background-color: #36322B;
+    padding: 1% 3% 1% 3%;
+    border-radius: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* section sur l'équipe */
+
+#equipe{
+    background-color: #B5A8A8;
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#equipe-carte{
+    background-color: #F5E4E4;
+    display: flex;
+    width: 75%;
+    height: 400px;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#texte-equipe{
+    padding: 2%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#texte-equipe h2{
+    margin: 0%;
+}
+
+/* responsive */
+@media screen and (width < 1250px){
+    .carte{
+        width: 80%;
+    }
+    #equipe-carte{
+        width: 80%;
+        height: 370px;
+    }
+    #texte-equipe{
+        font-size: 15px;
+    }
+    #texte-equipe h2{
+        font-size: 28px;
+    }
+}
+
+@media screen and (width < 1070px) {
+    #equipe-carte{
+        width: 90%;
+    }
+    #texte-equipe{
+        font-size: 14px;
+    }
+    #texte-equipe h2{
+        font-size: 26px;
+    }
+}
+
+@media screen and (width < 920px){
+    .carte{
+        font-size: 14px;
+    }
+    .carte h3{
+        font-size: 23px;
+    }
+    #equipe-carte{
+        height: 320px;
+    }
+    #texte-equipe{
+        font-size: 13px;
+    }
+    #texte-equipe h2{
+        font-size: 24px;
+    }
+    #presentation-salon h1{
+        font-size: 38px;
+    }
+}
+
+@media screen and (width < 820px){
+    #equipe-carte{
+        flex-direction: column;
+        width: 50%;
+        height: 50%;
+    }
+    #texte-equipe{
+        font-size: 12px;  
+    }
+    #texte-equipe h2{
+        font-size: 22px;
+    }
+    .carte{
+        height: 200px;
+        font-size: 13px;
+    }
+    .texte-carte a{
+        font-size: 14px;
+    }
+    .texte-carte{
+        padding: 3%;
+    }
+    .carte h3{
+        font-size: 20px;
+    }
+    #presentation-salon h1{
+        font-size: 34px;
+    }
+}
+
+@media screen and (width < 650px){
+    .carte{
+        height: 150px;
+        font-size: 12px;
+        width: 85%;
+    }
+    .carte h3{
+        font-size: 17px;
+    }
+    .texte-carte a{
+        font-size: 12px;
+    }
+    #equipe-carte{
+        width: 60%;
+    }
+    #presentation-salon h1{
+        font-size: 30px;
+    }
+    #potiere-stand{
+        height: 60%;
+        width: 60%;
+    }
+}
+
+@media screen and (width < 570px){
+    .carte{
+        height: 130px;
+        font-size: 10px;
+    }
+    .carte h3{
+        font-size: 14px;
+    }
+    .texte-carte a{
+        font-size: 10px;
+    }
+    #equipe-carte{
+        width: 70%;
+    }
+}
+
+@media screen and (width < 500px){
+    #presentation-salon h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (width < 480px){
+    .carte img{
+        display: none;;
+    }
+    #equipe-carte{
+        width : 80%;
+    }
+}

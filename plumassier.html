@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/global.css">
+    <title>Plumasserie</title>
+</head>
+<body>
+    <section class="presentation">
+        <img class="banner" src="ressources/plumassier/banner.png" alt="Broche représentant une fleur, réalisée à l'aide plumes.">
+        <p class="ariane"><a href="index.html">Accueil</a> > <a href="">Plumasserie</a></p>
+        <div class="flex">
+            <h1>Plumasserie</h1>
+            <div class="portrait">
+                <img src="ressources/plumassier/portrait.jpg" alt="Photo du plumassier">
+                <p class="citation-portrait">«Je suis Éric Charpentier, artisan relieur d’art, restaurateur de livres anciens, et plumassier. »</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="article">
+        <p class="para first-para">Principalement plumassier, Éric Charpentier réalise des œuvres à l’aide de plumes. Avec  différentes techniques de découpage, de frisage, et d’assemblage, 
+            il réalise principalement des sculptures sous globes de verre, mais aussi des accessoires de mode comme des nœuds papillon ou des broches.</p>
+
+            <div class="images">
+                <img src="ressources/plumassier/boutonniere.jpg" alt="Boutonnière ornée de plumes fabriquées par Éric Charpentier.">
+                <span>Photographie par Amélie Vergnaud</span>
+            </div>
+
+        <p class="citation">« J’avais envie de trouver une matière première fragile, précieuse, et esthétiquement belle »</p>
+
+        <p class="para">La délicatesse de la plume plaît tout de suite à Éric, et trouve sa place dans la continuité de son travail : la mise en valeur d’objets sous globe de verre. <br>
+            Toutes les plumes et leurs couleurs sont naturelles et prélevées dans le respect de l’animal. Nous pourrons notamment retrouver des plumes de paon et de faisan. <br>
+            Éric nous présente ensuite ses œuvres, à commencer par les broches situées sur la table devant lui, faites de plumes diverses et variées, puis des médaillons encadrés, fruits d’un travail de six mains. 
+            Les médaillons sont des compositions abstraites réalisées en collaboration avec une brodeuse d’art qui a réalisé les médaillons centraux, et les cadres sur mesure sont réalisés par une encadreuse d’art. <br>
+            Chaque œuvre est plus ou moins longue à réaliser, les broches peuvent prendre quelques heures lorsqu’une composition sous globe peut prendre des jours.
+            </p>
+
+            <div class="images">
+                <img src="ressources/plumassier/globe.JPG" alt="oeuvre en plumes sous globe de verre.">
+                <span>Photographie par Amélie Vergnaud</span>
+            </div>
+        
+        <p class="citation">“il faut aller jusqu’au bout de ses projets, bien se renseigner, il ne faut pas abandonner”</p>
+
+        <p class="para last-para">Éric nous confie qu’il faut du temps, de la patience, de la précision, et de la passion. Si l’on souhaite se lancer dans l’aventure, il conseille de s’accrocher, de ne pas abandonner, 
+            et de bien se renseigner sur la voie et les pratiques à suivre.</p>
+    </section>
+
+    <div id="galerie">
+        <div class="contenu_article">
+            <h2>Galerie Photos</h2>
+            <div id="grillePhoto">
+
+                <div><img src="ressources/plumassier/galerie/plumassier-grand.jpg" alt="Photo d'Éric Charpentier." class="photo-galerie" onclick="galerie(event)"></div>
+                <div><img src="ressources/plumassier/galerie/boutonniere-grande.jpg" alt="Boutonnières réalisées avec des plumes." class="photo-galerie" onclick="galerie(event)"></div>
+                <div><img src="ressources/plumassier/galerie/noeud-papillon-grand.jpg" alt="Noeud papillons avec une plume." class="photo-galerie" onclick="galerie(event)"></div>
+                <div><img src="ressources/plumassier/galerie/broche-grande.jpg" alt="Broche en plumes vertes et jaunes." class="photo-galerie" onclick="galerie(event)"></div>
+
+
+                <div><img src="ressources/plumassier/galerie/plumassier-grand-3.jpg" alt="Le plumassier nous présente ses médaillons encadrés." class="photo-galerie" onclick="galerie(event)"></div>
+                <div><img src="ressources/plumassier/galerie/fleur-grande.jpg" alt="fleur réalisée avec des plumes." class="photo-galerie" onclick="galerie(event)"></div>
+                <div><img src="ressources/plumassier/galerie/medaillons-grands.jpg" alt="Médaillons encadrés." class="photo-galerie" onclick="galerie(event)"></div>
+                <div><img src="ressources/plumassier/galerie/plumassier-grand4.jpg" alt="Photo d'Éric Charpentier." class="photo-galerie" onclick="galerie(event)"></div>
+
+                <div><img src="ressources/plumassier/galerie/plumassier-grand-2.jpg" alt="Le plumassier nous présente son stand." class="photo-galerie" onclick="galerie(event)"></div>
+                <div><img src="ressources/plumassier/galerie/pancarte-grand.jpg" alt="Pancarte présente sur le stand." class="photo-galerie" onclick="galerie(event)"></div>
+
+            </div>
+        </div>
+        <div id="misEnAvant" class="hidden">
+            <img src="ressources/icones/left.png" alt="flèche gauche" id="left" onclick="galeriePrecedent()">
+            <img src="" alt="" id="photoAvant">
+            <img src="ressources/icones/right.png" alt="flèche droite" id="right" onclick="galerieSuivant()">
+            <img src="ressources/icones/croix.png" alt="croix" id="croix" onclick="fermerGalerie()">
+        </div>
+    </div>
+
+    <hr/>
+
+    <section id="autres-metiers">
+        <h2>Découvrir d'autres métiers</h2>
+
+        <div class="flex2">
+            <div class="carte-metiers">
+                <img src="ressources/autres-metiers/lapidaire.JPG" alt="stand du lapidaire.">
+                <div class="contenu-carte">
+                    <h3>Lapidaire</h3>
+                    <p>Dernier lapidaire tourneur au monde, celui-ci taille les pierres précieuses et les transforme en oeuvres et bijoux uniques en leur genre.</p>
+                    <a href="lapidaire.html">Découvrir ce métier</a>
+                </div>
+            </div>
+
+            <div class="carte-metiers">
+                <img src="ressources/autres-metiers/potier.JPG" alt="La potière qui tourne un bol.">
+                <div class="contenu-carte">
+                    <h3>Potier / Céramiste</h3>
+                    <p>Les métiers de potier et céramiste sont synonymes. C’est un artisan qui se spécialise dans la fabrication et la décoration d’objets en terre cuite.</p>
+                    <a href="potiere.html">Découvrir ce métier</a>
+                </div>
+            </div>
+
+            <div class="carte-metiers">
+                <img src="ressources/autres-metiers/ebeniste.JPG" alt="Flèches en bois réalisées par l'ébéniste.">
+                <div class="contenu-carte">
+                    <h3>Ébéniste</h3>
+                    <p>Un ébéniste est un artisan qui transforme des bois, afin de créer des meubles. Il fait également de la restauration de meubles, et peut fabriquer des objets décoratifs.</p>
+                    <a href="ebeniste.html">Découvrir ce métier</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="nav">
+            <a href="index.html">Accueil</a>
+            <a href="lapidaire.html">Lapidaire</a>
+            <a href="ebeniste.html">Ébéniste</a>
+            <a href="potiere.html">Potière</a>
+            <a href="plumassier.html">Plumassier</a>
+        </div>
+        <span>© Copyright | Tous droits réservés.</span>
+    </footer>
+    <script src="js/galerie.js"></script>
+</body>
+</html>
